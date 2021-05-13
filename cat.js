@@ -54,8 +54,8 @@ let fs = require("fs");
 
 // console.log(options);
 // console.log(files);
-
-function removeLargeSpaces(arr) {
+ 
+function removeLargeSpaces(arr) { // to remove large spaces
   let y = [];
 
   let flag = false;
@@ -89,7 +89,7 @@ function addNonEmptyNum(arr){
   let lineNumber=1;
   for(let i=0;i<arr.length;i++){
     if(arr[i] !== "" && arr[i] !=="\r"){
-      arr[i] = lineNumber + " "+arr[i];
+      arr[i] = lineNumber + " " +arr[i];
     lineNumber++;    }
   }
 
